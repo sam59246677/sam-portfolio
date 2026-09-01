@@ -1,4 +1,5 @@
 # Sam Portfolio
+![Sam Portfolio Preview](./public/portfolio-preview.png)
 
 A modern and responsive frontend developer portfolio built with React, TypeScript, and Tailwind CSS.
 
