@@ -8,6 +8,7 @@ image: bookstoreImage,
 technologies: ["React", "TypeScript", "Tailwind CSS", "React Router"],
 github: "https://github.com/sam59246677/sam-sbookstore",
 live: "https://sam59246677.github.io/sam-sbookstore/",
+
 };
 
 function Projects() {

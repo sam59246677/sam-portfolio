@@ -1,3 +1,4 @@
+import profileImage from "../assets/profile.jpg";
 function Hero() {
   return (
     <section
@@ -48,9 +49,16 @@ function Hero() {
           <div className="relative flex h-80 w-80 items-center justify-center rounded-full bg-blue-100">
             <div className="absolute h-64 w-64 rounded-full bg-blue-200" />
 
-            <div className="relative flex h-56 w-56 items-center justify-center rounded-full bg-blue-600 text-7xl font-bold text-white shadow-2xl">
+            {/* <div className="relative flex h-56 w-56 items-center justify-center rounded-full bg-blue-600 text-7xl font-bold text-white shadow-2xl">
               S
-            </div>
+            </div> */}
+            <div className="relative h-56 w-56 overflow-hidden rounded-full bg-blue-100 shadow-2xl">
+  <img
+    src={profileImage}
+    alt="Sam Rostami"
+    className="h-full w-full object-cover"
+  />
+</div>
           </div>
         </div>
       </div>
