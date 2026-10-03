@@ -1,8 +1,25 @@
-
 import bookstoreImage from "../assets/projects/bookstore.png";
 import expenseTrackerImage from "../assets/projects/expense-tracker.png";
+import saasDashboardImage from "../assets/projects/saas-admin-dashboard.png";
 
 const projects = [
+  {
+    title: "SaaS Admin Dashboard",
+    description:
+      "A modern and responsive SaaS admin dashboard built with React and TypeScript. It includes product CRUD operations, search, filtering, sorting, pagination, dashboard statistics, charts, settings management, protected routes, and dark mode support.",
+    image: saasDashboardImage,
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "React Router",
+      "TanStack Query",
+      "Recharts",
+    ],
+    github: "https://github.com/sam59246677/saas-admin-dashboard",
+    live: "https://sam59246677.github.io/saas-admin-dashboard/",
+    featured: true,
+  },
   {
     title: "Expense Tracker",
     description:
@@ -17,7 +34,7 @@ const projects = [
     ],
     github: "https://github.com/sam59246677/expense-tracker",
     live: "https://sam59246677.github.io/expense-tracker/",
-    featured: true,
+    featured: false,
   },
   {
     title: "Sam's Bookstore",
@@ -132,4 +149,3 @@ function Projects() {
 }
 
 export default Projects;
-
