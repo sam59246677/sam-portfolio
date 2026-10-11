@@ -1,8 +1,28 @@
+
+import ecommerceImage from "../assets/projects/sam-ecommerce.png";
 import bookstoreImage from "../assets/projects/bookstore.png";
 import expenseTrackerImage from "../assets/projects/expense-tracker.png";
 import saasDashboardImage from "../assets/projects/saas-admin-dashboard.png";
 
 const projects = [
+  {
+    title: "Sam Ecommerce",
+    description:
+      "A modern and responsive e-commerce application built with React and TypeScript. It includes product browsing, product details, search and filtering, shopping cart management, checkout and order workflows, authentication, and role-based access control.",
+    image: ecommerceImage,
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "React Router",
+      "TanStack Query",
+      "Zustand",
+      "React Hook Form",
+    ],
+    github: "https://github.com/sam59246677/sam-ecommerce",
+    live: "https://sam59246677.github.io/sam-ecommerce/",
+    featured: true,
+  },
   {
     title: "SaaS Admin Dashboard",
     description:
@@ -18,7 +38,7 @@ const projects = [
     ],
     github: "https://github.com/sam59246677/saas-admin-dashboard",
     live: "https://sam59246677.github.io/saas-admin-dashboard/",
-    featured: true,
+    featured: false,
   },
   {
     title: "Expense Tracker",
@@ -57,7 +77,6 @@ function Projects() {
   return (
     <section id="projects" className="bg-white px-6 py-24">
       <div className="mx-auto max-w-7xl">
-        {/* Section Header */}
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
             Featured Projects
@@ -73,19 +92,18 @@ function Projects() {
           </p>
         </div>
 
-        {/* Projects */}
         <div className="mt-12 space-y-10">
           {projects.map((project) => (
             <article
               key={project.title}
               className="group overflow-hidden rounded-2xl border border-gray-200 bg-gray-50 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl lg:flex"
             >
-              {/* Project Image */}
               <div className="relative lg:w-3/5">
                 <div className="aspect-video h-full overflow-hidden bg-gray-100">
                   <img
                     src={project.image}
                     alt={`${project.title} screenshot`}
+                    loading="lazy"
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -97,7 +115,6 @@ function Projects() {
                 )}
               </div>
 
-              {/* Project Content */}
               <div className="flex flex-1 flex-col p-6 sm:p-8 lg:w-2/5 lg:p-10">
                 <h3 className="text-2xl font-bold text-gray-900">
                   {project.title}
@@ -107,7 +124,6 @@ function Projects() {
                   {project.description}
                 </p>
 
-                {/* Technologies */}
                 <div className="mt-6 flex flex-wrap gap-2">
                   {project.technologies.map((technology) => (
                     <span
@@ -119,7 +135,6 @@ function Projects() {
                   ))}
                 </div>
 
-                {/* Actions */}
                 <div className="mt-auto flex flex-wrap gap-3 pt-8">
                   <a
                     href={project.github}
