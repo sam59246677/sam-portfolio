@@ -3,6 +3,7 @@ import ecommerceImage from "../assets/projects/sam-ecommerce.png";
 import bookstoreImage from "../assets/projects/bookstore.png";
 import expenseTrackerImage from "../assets/projects/expense-tracker.png";
 import saasDashboardImage from "../assets/projects/saas-admin-dashboard.png";
+import taskflowImage from "../assets/projects/taskflow.png";
 
 const projects = [
   {
@@ -71,6 +72,26 @@ const projects = [
     live: "https://sam59246677.github.io/sam-sbookstore/",
     featured: false,
   },
+  
+  {
+    title: "TaskFlow",
+    description:
+      "A modern SaaS task and project management application built with React and TypeScript. It includes task management, project creation and editing, team member assignment, role-based navigation, dashboard statistics, activity charts, deadlines, settings, and dark mode.",
+    image: taskflowImage,
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "React Router",
+      "TanStack Query",
+      "JSON Server",
+      "Lucide React",
+    ],
+    github: "https://github.com/sam59246677/taskflow",
+    live: "https://sam59246677.github.io/taskflow/",
+    featured: true,
+  },
+
 ];
 
 function Projects() {
