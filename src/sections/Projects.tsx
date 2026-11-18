@@ -1,4 +1,4 @@
-
+import royalBarberImage from "../assets/projects/royal-barber.png";
 import ecommerceImage from "../assets/projects/sam-ecommerce.png";
 import bookstoreImage from "../assets/projects/bookstore.png";
 import expenseTrackerImage from "../assets/projects/expense-tracker.png";
@@ -6,6 +6,24 @@ import saasDashboardImage from "../assets/projects/saas-admin-dashboard.png";
 import taskflowImage from "../assets/projects/taskflow.png";
 
 const projects = [
+  {
+    title: "Royal Barber",
+    description:
+      "A full-stack barber shop management and appointment booking application built with React, TypeScript, Node.js, Express, and PostgreSQL. Customers can book appointments without creating an account, while administrators and barbers have separate dashboards for managing services, staff, and appointments.",
+    image: royalBarberImage,
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "React Router",
+    ],
+    github: "https://github.com/sam59246677/royal-barber",
+    live: "https://royal-barber-ccif.onrender.com",
+    featured: true,
+  },
   {
     title: "Sam Ecommerce",
     description:
@@ -72,7 +90,6 @@ const projects = [
     live: "https://sam59246677.github.io/sam-sbookstore/",
     featured: false,
   },
-  
   {
     title: "TaskFlow",
     description:
@@ -91,7 +108,6 @@ const projects = [
     live: "https://sam59246677.github.io/taskflow/",
     featured: true,
   },
-
 ];
 
 function Projects() {
@@ -108,8 +124,8 @@ function Projects() {
           </h2>
 
           <p className="mt-5 text-lg leading-8 text-gray-600">
-            A selection of my frontend work, focused on building responsive
-            and modern web applications with React and TypeScript.
+            A selection of my frontend and full-stack work, focused on building
+            responsive and modern web applications with React and TypeScript.
           </p>
         </div>
 
